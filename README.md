@@ -12,7 +12,7 @@ You need the following on your machine to run this app locally:
    3. `source .venv/bin/activate`
 5. Now install the required Python libraries inside your virtual environment with these commands:
    1. `pip install --upgrade pip`
-   2. `pip install ollama flask pillow`
+   2. `pip install ollama flask markdown2 pillow`
 6. At this point, you should see the name of the virtual environment printed in brackets `(.venv)` before your actual command prompt.
 7. Launch the web-app using this command: `python3 with-flask-web-app.py` and navigate to https://localhost:5000/ to try it out.
 8. We also have a command-line app that can be run using: `python3 with-single-image.py`.

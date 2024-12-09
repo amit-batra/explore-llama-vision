@@ -6,6 +6,7 @@
 # Start this app using: python3 with-flask-web-app.py
 
 import base64
+import markdown2
 import ollama
 from flask import Flask, request, render_template
     
@@ -38,8 +39,8 @@ def upload():
             }]
         )
 
-        # Extract the description from the Ollama response
-        description = response.message.content
+        # Extract the description from the Ollama response, convert to HTML
+        description = markdown2.markdown(response.message.content)
 
         # Render HTML with the image description
         return render_template('index.html', description=description) # f"<h1>Description:</h1><p>{description}</p>"
