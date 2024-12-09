@@ -43,7 +43,7 @@ def upload():
         description = markdown2.markdown(response.message.content)
 
         # Render HTML with the image description
-        return render_template('index.html', description=description) # f"<h1>Description:</h1><p>{description}</p>"
+        return render_template('index.html', description=description)
 
 if __name__ == "__main__":
     app.run(debug=True)
