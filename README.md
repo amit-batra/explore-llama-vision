@@ -1,5 +1,5 @@
 # Explore LLaMA Vision
-We have created a Flask-based simple Python web-app that lets the user upload an image, and then use the Ollama client API to generate a description for the image using LLaMA 3.2 Vision (11B parameters) AI model.
+We have created a simple Python web-app (using Streamlit) that lets the user upload an image, and then use the Ollama client API to generate a description for the image using LLaMA 3.2 Vision (11B parameters) AI model.
 
 # Running Locally
 You need the following on your machine to run this app locally:
@@ -13,8 +13,8 @@ You need the following on your machine to run this app locally:
 5. At this point, you should see the name of the virtual environment printed in brackets `(.venv)` before your actual command prompt.
 6. Now install the required Python libraries inside your virtual environment with these commands:
    1. `pip install --upgrade pip`
-   2. `pip install ollama flask markdown2 pillow`
+   2. `pip install ollama streamlit markdown2 pillow`
 7. Download and run the LLaMA 3.2 Vision 11B parameter model on your machine with this command: `ollama run llama3.2-vision:11b`. This model has a size of approximately 8GB, so it will take some time to download it. Next time onwards when you launch the model, the command should complete quickly.
-8. Launch the web-app using this command: `python3 with-flask-web-app.py` and navigate to https://localhost:5000/ to try it out.
-9. We also have a command-line app that can be run using: `python3 with-single-image.py`.
+8. Launch the web-app using this command: `streamlit run web-app.py` and navigate to https://localhost:8501/ to try it out.
+9. We also have a command-line app that can be run using: `python3 command-line.py <image_path_or_url>`.
 10. Deactivate your Python virtual environment using the command `deactivate`.
