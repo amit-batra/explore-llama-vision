@@ -10,10 +10,10 @@ You need the following on your machine to run this app locally:
    1. `cd explore-llama-vision`
    2. `python3 -m venv .venv`
    3. `source .venv/bin/activate`
-5. Now install the required Python libraries inside your virtual environment with these commands:
+5. At this point, you should see the name of the virtual environment printed in brackets `(.venv)` before your actual command prompt.
+6. Now install the required Python libraries inside your virtual environment with these commands:
    1. `pip install --upgrade pip`
    2. `pip install ollama flask markdown2 pillow`
-6. At this point, you should see the name of the virtual environment printed in brackets `(.venv)` before your actual command prompt.
 7. Download and run the LLaMA 3.2 Vision 11B parameter model on your machine with this command: `ollama run llama3.2-vision:11b`. This model has a size of approximately 8GB, so it will take some time to download it. Next time onwards when you launch the model, the command should complete quickly.
 8. Launch the web-app using this command: `python3 with-flask-web-app.py` and navigate to https://localhost:5000/ to try it out.
 9. We also have a command-line app that can be run using: `python3 with-single-image.py`.
