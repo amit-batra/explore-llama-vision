@@ -14,7 +14,8 @@ You need the following on your machine to run this app locally:
 6. Now install the required Python libraries inside your virtual environment with these commands:
    1. `pip install --upgrade pip`
    2. `pip install ollama streamlit markdown2 pillow`
-7. Download and run the LLaMA 3.2 Vision 11B parameter model on your machine with this command: `ollama run llama3.2-vision:11b`. This model has a size of approximately 8GB, so it will take some time to download it. Next time onwards when you launch the model, the command should complete quickly.
+7. Download and run the LLaMA 3.2 Vision 11B parameter model on your machine with this command: `ollama pull llama3.2-vision:11b`. This model has a size of approximately 8GB, so it will take some time to download it. This needs to be done only once.
 8. Launch the web-app using this command: `streamlit run web-app.py` and navigate to https://localhost:8501/ to try it out.
 9. We also have a command-line app that can be run using: `python3 command-line.py <image_path_or_url>`.
 10. Deactivate your Python virtual environment using the command `deactivate`.
+11. (Optional) You can delete the LLAMA Vision model from your machine using this command: `ollama delete llama3.2-vision:11b`.
